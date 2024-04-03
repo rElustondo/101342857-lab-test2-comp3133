@@ -3,15 +3,14 @@
 This application was built with Angular. It displays a list of missions, allows filtering by launch year and allows user to view mission details. 
 
 ## Screenshots
-
-![Screenshot 1](screenshots/screenshot1.png)
 *Screenshot of Mission List*
+![Screenshot 1](screenshots/screenshot1.png)
 
-![Screenshot 2](screenshots/screenshot2.png)
 *Screenshot of missions filtered by year*
-
-![Screenshot 3](screenshots/screenshot3.png)
+![Screenshot 2](screenshots/screenshot2.png)
 *Screenshot of Mission Details*
+![Screenshot 3](screenshots/screenshot3.png)
+
 
 ## Features
 
