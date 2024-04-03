@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist\\101342857-lab-test2-comp3133\\browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
