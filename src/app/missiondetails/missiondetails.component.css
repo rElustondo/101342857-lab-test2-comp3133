@@ -1,0 +1,21 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .mission-card {
+    width: 80%;
+    max-width: 500px; 
+    word-wrap: break-word; 
+    height: fit-content;
+}
+  
+
+  
+.small-img {
+    max-width: 200px;
+    max-height: 200px;
+    align-self: center;
+    justify-self: center;
+  }

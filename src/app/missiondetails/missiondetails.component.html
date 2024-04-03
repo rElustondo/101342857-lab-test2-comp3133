@@ -1,0 +1,21 @@
+<h1>Mission Details</h1>
+
+<div *ngIf="missionData" class="center-container">
+  <mat-card class="mission-card">
+    <mat-card-header>
+        <mat-card-title><strong>Mission Name:</strong></mat-card-title>
+      <mat-card-title>{{ missionData.mission_name }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>Launch Year:</strong> {{ missionData.launch_year }}</p>
+      <p><strong>Launch Site:</strong> {{ missionData.launch_site.site_name_long }}</p>
+      <p><strong>Rocket:</strong></p>
+      <ul>
+        <li><strong>Name:</strong> {{ missionData.rocket.rocket_name }}</li>
+        <li><strong>Type:</strong> {{ missionData.rocket.rocket_type }}</li>
+      </ul>
+      <p><strong>Details:</strong> {{ missionData.details }}</p>
+    </mat-card-content>
+    <img mat-card-image class="small-img" src="{{ missionData.links.mission_patch_small }}" alt="Mission Patch">
+  </mat-card>
+</div>
