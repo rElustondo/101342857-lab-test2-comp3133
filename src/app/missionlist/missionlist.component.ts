@@ -25,7 +25,6 @@ export class MissionlistComponent {
   constructor(private restApiService: RestapiServiceService, private router: Router) { }
   ngOnInit(): void {
     this.restApiService.getLaunches().subscribe((data: any) => {
-      console.log(data,"data");
       this.launchList = data;
       this.filteredMissions = data
     });
@@ -33,7 +32,6 @@ export class MissionlistComponent {
   filterByYear(year: string): void {
     this.selectedYear = year;
     this.restApiService.getLaunchesByYear(year).subscribe((data: any) => {
-      console.log(data,"datafiltered");
       this.filteredMissions = data
     });
   }
@@ -42,7 +40,6 @@ export class MissionlistComponent {
     this.filteredMissions = this.launchList;
   }
   toggleDetails(mission: any): void {
-    console.log(mission,"mission123");
     this.router.navigate(['/mission-details'], { queryParams: { flightNumber: mission.flight_number } });
   }
 
